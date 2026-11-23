@@ -38,7 +38,7 @@ stop:
 	docker compose stop
 
 deploy: build
-	docker compose cp target/${APPLICATION_NAME}.war webserver:/opt/jboss/wildfly/standalone/deployments
+	docker compose cp target/projetoDAE.war webserver:/opt/jboss/wildfly/standalone/deployments
 
 monitor: deploy logs
 
